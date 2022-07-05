@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Humitu</title>
+        <meta name="viewport" content="width=device-width, initial-scale = 1.0">
+        <link rel="stylesheet" href="asset/css/style.css">
+        <link rel="shortcut icon" type="image/png" href="asset/img/EC02-01-logo.png">
+        <meta name="google-signin-scope" content="profile email">
+        
+        <script src="https://apis.google.com/js/platform.js" async defer></script>
+        <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css">
+       
+        <meta name="google-signin-client_id" content=" 46161756038-dbolbr5ihgjqh11eslujrccf1n2loui4.apps.googleusercontent.com">
+    </head>
+
+    <body>
+        <div id ="home-login">  
+            <img src = "asset/img/EC02-01-logo.png">
+            <div id="login">
+                <div class="head">
+                    <div class="intro">
+                        <h1>Login to your Account</h1>
+                        <div class="g-signin2" data-width="380" data-height="40" data-longtitle="true"></div>
+                        <p class ="lg">----------- or Sign in with Email ------------  </p>
+                    </div>
+                    
+                    <form action="" id = form-login>
+                            <div class = "form-item">
+                            <p>Email</p> <br> <input type = "email" class ="form-input" placeholder = "Enter your email" pattern=" ^[A-Za-z0-9_.]{6,32}@([a-zA-Z0-9]{2,12})(.[a-zA-Z]{2,12})+$" 
+                            title="Contains alphanumeric characters, periods, underscores Character @ Character group before @ has 6-32 characters The character group after @ is a one- or more-level domain "required>
+                            </div>
+                            <div class = "form-item">
+                            <p>Password</p><br><input type = "password" class ="form-input" placeholder = "Enter your password" pattern="^([A-Z]){1}([\w_\.!@#$%^&*()]+){5,31}$"
+                            title="Password consists of alphanumeric characters, special characters, periods Start with a capital letter Length 6-32 characters" required>
+                            <div class="remember">
+                                <label class="rmb"><input id = "cb1" type="checkbox" name="" > Remember me</label>
+                                <a href="#">Forgot password?</a>
+                            </div>  
+                            </div>
+                            
+                            <br>    
+                            <input type ="submit" value="Login" class ="form-submit">  
+
+                            
+                            
+                    </form>
+                    
+                </div>
+                <div class = "register">
+                    <p> Not Registered Yet? <a href ="#">Create an account</a></p>
+                </div>
+            </div>
+        </div>
+
+        
+    
+    </body>
+    
+</html>
