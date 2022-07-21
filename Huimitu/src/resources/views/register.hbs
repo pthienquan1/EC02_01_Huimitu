@@ -1,0 +1,103 @@
+<form class="bg_gray" method="POST" action="">
+    <div class="container margin_50">
+        <div class="page_header">
+            <h1>Create an Account</h1>
+        </div>
+        <!-- /page_header -->
+        <div class="row justify-content-center">
+            <div class="col-xl-6 col-lg-6 col-md-8">
+                <div class="box_account">
+                    <h3 class="new_client">Register</h3>
+                        <div class="error " role="alert">
+                            {{error}}
+                        </div>
+                        {{#if errors}}
+                            {{#each errors}}
+                                <div class="errors alert alert-warning" role="alert">
+                                    {{msg}}
+                                </div>
+                            {{/each}}
+                        {{/if}}
+
+                    <div class="form_container">
+                        <div class="form-group">
+                            <input type="email" class="form-control" name="email" id="email" placeholder="Email*">
+                        </div>
+                        <div class="form-group">
+                            <input type="password" class="form-control" name="password" id="password" value=""
+                                placeholder="Password*">
+                        </div>
+                        <hr>
+                        <div class="private box">
+                            <div class="row no-gutters">
+                                <div class="col-12 pr-1">
+                                    <div class="form-group">
+                                        <input type="text" class="form-control" placeholder="Username*" name="username">
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="form-group">
+                                        <input type="text" class="form-control" placeholder="Full Address*" name="fullAdress">
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- /row -->
+                            <div class="row no-gutters">
+                                <div class="col-12 pr-1">
+                                    <div class="form-group">
+                                        <input type="text" class="form-control" placeholder="City*" name="city">
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- /row -->
+
+                            <div class="row no-gutters">
+                                <div class="col-6 pr-1">
+                                    <div class="form-group">
+                                        <div class="form-group">
+                                        <input type="text" class="form-control" placeholder="Country*" name="country">
+                                    </div>
+                                    </div>
+                                </div>
+                                <div class="col-6 pl-1">
+                                    <div class="form-group">
+                                        <input type="text" class="form-control" placeholder="Telephone *" name="telephone">
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- /row -->
+                        </div>
+                        <hr>
+                        <div class="text-center"><input type="submit" value="Register" class="btn_1 full-width"></div>
+                    </div>
+                    <!-- /form_container -->
+                </div>
+                <!-- /box_account -->
+            </div>
+        </div>
+        <!-- /row -->
+    </div>
+    <!-- /container -->
+</form>
+
+{{#section 'script'}}
+    <script>
+        $('#email').on('input', function () {
+            const emailInput = $(this);
+             $( '.error' ).removeClass( "alert alert-warning" );
+            $.getJSON('/api/check-email-exist/' + this.value, function (isExist) {
+                if (isExist) {
+                    emailInput.addClass('is-invalid');
+                    $( '.error' ).addClass( "alert alert-warning" );
+                    emailInput.removeClass('is-valid');
+                    $('.error').html('Email already exist');
+                } else {
+                    emailInput.addClass('is-valid');
+                    emailInput.removeClass('is-invalid');
+                    $('.error').html('');
+                }
+            });
+        });
+    </script>
+    <script>$('.alert').alert()</script>
+{{/section}}

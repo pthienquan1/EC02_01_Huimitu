@@ -1,0 +1,189 @@
+<div class="row">
+    <div class="col-sm-6 col-md-4 col-md-offset-4 col-sm-offset-3">
+        {{!-- <div id="success" class="alert alert-success{{#if noMessage}}d-none{{/if}}">
+            {{ successMsg }}
+        </div> --}}
+    </div>
+</div>
+
+<main>
+    <div class="top_banner">
+        <div class="opacity-mask d-flex align-items-center" data-opacity-mask="rgba(0, 0, 0, 0.3)">
+            <div class="container">
+                <h1>Products Listing</h1>
+            </div>
+        </div>
+        <img src="img/bg_cat_shoes.jpg" class="img-fluid" alt="">
+    </div>
+    <!-- /top_banner -->
+    <div id="stick_here"></div>
+    <div class="toolbox elemento_stick" style="height=200px" >
+        <div class="container">
+            <ul class="clearfix">
+                <li>
+                    <form class="" method="get">
+                        <div class="mt-0" name="sort" id="sort">
+                            <input class="mt-0" type="radio" name="sort" value="createdAt"  selected="selected">Sort createAt</input>
+                            <input class="mt-0" type="radio" name="sort" value="price">Sort by price</input>
+                            <button type="submit" class="btn btn-primary btn-sm" id="btnsort" >Sort</button>
+                        </div>
+                    </form>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!-- /toolbox -->
+    <div class="container margin_30">
+        <div class="row">
+            <aside class="col-lg-3" id="sidebar_fixed">
+                <form class="filter_col" method="get">
+                    <div class="inner_bt"><a href="#" class="open_filters"><i class="ti-close"></i></a></div>
+                    <div class="filter_type version_2">
+                        <h4><a href="#filter_3" data-toggle="collapse" class="opened">Name</a></h4>
+                        <div class="collapse show" id="filter_3">
+                            <input type="text" class="container_check flex" name="search" value="">                                       
+                        </div>
+                    </div>
+                    <div class="filter_type version_2">
+                        <h4><a href="#filter_1" data-toggle="collapse" class="opened">Categories</a></h4>
+                        <div class="collapse show" id="filter_1">
+                            <ul>
+                                <li>
+                                    <label class="container_check">Xe <small></small>
+                                        <input type="checkbox" name="filtering" value="xe">
+                                        <span class="checkmark"></span>
+                                    </label>
+                                </li>
+                                <li>
+                                    <label class="container_check">Sách <small></small>
+                                        <input type="checkbox" name="filtering" value="Sách">
+                                        <span class="checkmark"></span>
+                                    </label>
+                                </li>
+                            </ul>
+                        </div>
+                        <!-- /filter_type -->
+                    </div>
+                    <!-- /filter_type -->
+                    <div class="filter_type version_2">
+                        <h4><a href="#filter_2" data-toggle="collapse" class="opened">Manufacture</a></h4>
+                        <div class="collapse show" id="filter_2">
+                            <ul>
+                                <li>
+                                    <label class="container_check">Vietnam<small></small>
+                                        <input type="checkbox" name="filtering" value="Vietnam">
+                                        <span class="checkmark"></span>
+                                    </label>
+                                </li>
+                                <li>
+                                    <label class="container_check">Thailand <small></small>
+                                        <input type="checkbox" name="filtering" value="Nhật bản">
+                                        <span class="checkmark"></span>
+                                    </label>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- /filter_type -->
+                    
+                    <!-- /filter_type -->
+                    <div class="filter_type version_2">
+                        <h4><a href="#filter_4" data-toggle="collapse" class="closed">Price</a></h4>
+                        <div class="collapse" id="filter_4">
+                            <ul>
+                                <li>
+                                    <label class="container_check">$0 — $50<small></small>
+                                        <input type="checkbox">
+                                        <span class="checkmark"></span>
+                                    </label>
+                                </li>
+                                <li>
+                                    <label class="container_check">$50 — $100<small></small>
+                                        <input type="checkbox">
+                                        <span class="checkmark"></span>
+                                    </label>
+                                </li>
+                                <li>
+                                    <label class="container_check">$100 — $150<small></small>
+                                        <input type="checkbox">
+                                        <span class="checkmark"></span>
+                                    </label>
+                                </li>
+                                <li>
+                                    <label class="container_check">$150 — $200<small></small>
+                                        <input type="checkbox">
+                                        <span class="checkmark"></span>
+                                    </label>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- /filter_type -->
+                    <div class="buttons">
+                       <button type="submit" class="btn_1" id="btn" >filter</button> <a href="#0" class="btn_1 gray">Reset</a>
+                    </div>
+                </form>
+            </aside> 
+            <!-- /col -->
+            <div class="col-lg-9">
+                {{#each products}}
+                <div class="row row_item" >
+                    <div class="col-sm-4">
+                        <figure>
+                            <span class="ribbon off">-30%</span>
+                            <a href="/products/details/{{slug}}">
+                                <img class="img-fluid lazy" src="{{splitPath fileImage}}"
+                                     alt="">
+                            </a>
+                            <div data-countdown="2019/05/15" class="countdown"></div>
+                        </figure>
+                    </div>
+                    <div class="col-sm-8">
+                        {{!-- <div class="rating"><i class="icon-star voted"></i><i class="icon-star voted"></i><i
+                                class="icon-star voted"></i><i class="icon-star voted"></i><i class="icon-star"></i>
+                        </div> --}}
+                        <a href="/products/details/{{slug}}">
+                            <h3>{{name}}</h3>
+                        </a>
+                        <p>{{description}}</p>
+                        <div class="price_box">
+                            <span class="new_price">{{price}}</span>
+                            {{!-- <span class="old_price">$60.00</span> --}}
+                        </div>
+                        <ul>
+                            <li><a href="/products/add-to-cart/{{this._id}}" class="btn_1" role="button">Add to cart</a></li>
+                            <li><a href="#0" class="btn_1 gray tooltip-1" data-toggle="tooltip" data-placement="top"
+                                    title="Add to favorites"><i class="ti-heart"></i><span>Add to favorites</span></a>
+                            </li>
+                            <li><a href="#0" class="btn_1 gray tooltip-1" data-toggle="tooltip" data-placement="top"
+                                    title="Add to compare"><i class="ti-control-shuffle"></i><span>Add to
+                                        compare</span></a></li>
+                        </ul>
+                    </div>
+                </div>
+                {{/each}}
+                <form id="demo" class="pagination__wrapper" method="get">
+                    <ul class="pagination">
+                        <li><a href="#0" class="prev" title="previous page">&#10094;</a></li>
+                        <li>
+                            <a href="#0">1</a>
+                        </li>
+                        <li>
+                            <a href="#0" >2</a>
+                        </li>
+                        <li>
+                            <a href="#0">3</a>
+                        </li>
+                        <li>
+                            <a href="#0">4</a>
+                        </li>
+                        <li><a href="#0" class="next" title="next page">&#10095;</a></li>
+                    </ul>
+                </form>
+            </div>
+            <!-- /col -->
+        </div>
+        <!-- /row -->
+    </div>
+    <!-- /container -->
+</main>

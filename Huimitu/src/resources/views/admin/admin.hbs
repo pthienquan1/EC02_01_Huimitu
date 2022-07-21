@@ -1,0 +1,1285 @@
+
+  <div id="content" class="main-content">
+            <div class="container">
+                <div class="page-header">
+                    <div class="page-title">
+                        <h3>eCommerce Dashboard</h3>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-xl-4 col-lg-12 col-md-6 col-sm-12">
+                        <div class="row">
+
+                            <div class="col-xl-12 col-lg-6">
+                                <div class="widget-content-area br-4 mb-4 layout-spacing">
+                                    <div class="widget  t-order-widget">
+                                        <div class="row">
+                                            <div class="col-md-5 col-sm-5 col-12 text-md-left text-center pr-0 mt-sm-0 mt-4  order-1 order-sm-0">
+                                                <p class="t-o-txt mb-3 mb-sm-5 mt-3">Total Orders</p>
+                                                <p class="t-o-value">1596 <i class="flaticon-arrow-up"></i></p>
+                                                <div class="t-o-icon">
+                                                    <i class="flaticon-cart-2"></i>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-7 col-sm-7 col-12">
+                                                <div class="cogs  mt-sm-5 mt-3  ml-md-auto mx-auto"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-xl-12 col-lg-6">
+                                <div class="widget-content-area br-4 layout-spacing">
+                                    <div class="widget  t-sales-widget">
+                                        <i class="flaticon-close-fill cancel-row"></i>
+                                        <div class="row">
+                                            <div class="col-md-7 col-sm-7 col-12">                                                
+                                                <div class="trading-time mt-4">
+
+                                                    <div class="d-flex date-content justify-content-center">
+                                                        <div class="text-center">
+                                                            <div id="week" class="d-inline"></div>
+                                                            <div id="day" class="d-inline"> </div>
+                                                            <div id="month" class="d-inline"></div>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="d-flex timer-content justify-content-center mt-2">
+                                                        <div id="hour" class=""></div>
+                                                        <div id="minut" class=""></div>
+                                                        <div id="sec" class=""></div>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                            <div class="col-md-5 col-sm-5 col-12 text-center text-center">
+                                                <i class="flaticon-wall-clock icon  mt-3"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="col-xl-8 col-lg-12 col-md-6 col-sm-12">
+                        <div class="statbox widget box box-shadow layout-spacing br-4">                            
+                            <div class="widget-header">
+                                <div class="row">
+                                    <div class="col-xl-12 col-md-12 col-sm-12 col-12">
+                                        <h4>Sales Statistics</h4>
+                                    </div>                 
+                                </div>
+                            </div>
+                            <div class="widget-content widget-content-area p-0 sale-statistics">
+                                <div id="sale-statistics" class="mb-4"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="row">
+                    
+                    <div class="col-xl-4 col-lg-6 col-md-6 col-sm-12 layout-spacing">
+                        <div class="statbox widget box box-shadow br-4">                            
+                            <div class="widget-header">
+                                <div class="row">
+                                    <div class="col-xl-12 col-md-12 col-sm-12 col-12">
+                                        <h4>Top 5 Products</h4>
+                                    </div>                 
+                                </div>
+                            </div>
+                            <div class="widget-content widget-content-area p-0 h-100">
+                                <div class="col-md-12">
+                                    <div id="radarchartdiv"></div>
+                                </div>
+                                <a href="http://www.amcharts.com/javascript-charts/" title="JavaScript charts" target="_blank" style="position: absolute; text-decoration: none; color: rgb(0, 0, 0); font-family: Verdana; font-size: 11px; opacity: 0.7; display: block; left: 8px; bottom: 8px;">JS chart by amCharts</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-xl-4 col-lg-6 col-md-6 col-sm-12 layout-spacing">
+                        <div class="row">
+
+                            <div class="col-xl-12 mb-4">
+                                <div class="widget-content widget-content-area br-4">                                    
+                                    <div class="total-visits">                                        
+                                        <div class="row">
+                                            <div class="col-md-6 col-sm-6 col-6 mb-3">
+                                                <p class="t-v-value mb-0">26789</p>
+                                            </div>
+                                            <div class="col-md-6 col-sm-6 col-6">
+                                                <div class="total-visits-charts"></div>
+                                            </div>
+
+                                            <div class="col-md-12">
+                                                <p class="t-v-txt d-flex">Total Visits <i class="flaticon-profits-1 align-self-center ml-2"></i></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-xl-12 mb-4">
+                                <div class="widget-content widget-content-area br-4">                                    
+                                    <div class="unique-visits">                                        
+                                        <div class="row">
+                                            <div class="col-md-6 col-sm-6 col-6 mb-3">
+                                                <p class="u-v-value mb-0 d-flex">18678</p>
+                                            </div>
+                                            <div class="col-md-6 col-sm-6 col-6">
+                                                <div id="unique-visits-charts"></div>
+                                            </div>
+                                            <div class="col-md-12">
+                                                <p class="u-v-txt mb-0">Unique Visits <i class="flaticon-arrows-1 align-self-center ml-2"></i></p>
+                                            </div>
+                                        </div>                                        
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-xl-12 col-sm-">
+                                <div class="widget-content widget-content-area br-4">                                    
+                                    <div class="page-views">                                        
+                                        <div class="row">
+                                            <div class="col-md-6 col-sm-6 col-6 mb-3">
+                                                <p class="p-v-value mb-0 d-flex">8225</p>
+                                            </div>
+                                            <div class="col-md-6 col-sm-6 col-6">
+                                                <div id="page-views"></div>
+                                            </div>
+                                            <div class="col-md-12">
+                                                <p class="p-v-txt mb-0">Page Views <i class="flaticon-up-arrow-3 align-self-center ml-2"></i></p>
+                                            </div>
+                                        </div>                                        
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="col-xl-4 col-lg-12 col-md-12 col-sm-12 layout-spacing">
+                        <div class="widget-content widget-content-area p-0 traffic-sources h-100 br-4">
+
+                            <div class="traffic-sources">
+
+                                <div class="traffic-sources-header">
+                                    <div class="row">
+                                        <div class="col-xl-12 col-md-12 col-sm-12 col-12">
+                                            <h6>Traffic Sources</h6>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="traffic-sources-body">                                    
+                                    <div class="table-responsive  mt-4 traffic-sources-scroll">
+                                        <table class="table">
+                                            <tbody>
+                                                <tr>
+                                                    <td>
+                                                        <div class="d-flex">
+                                                            <div class=" align-self-center d-m-traffic-sources  mr-1 data-marker"></div>
+                                                            <span class="t-s-name">Organic</span>
+                                                        </div>
+                                                    </td>
+                                                    <td> <div id="t-s-organic-chart"></div> </td>
+                                                    <td class="text-right"> 1700 </td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td>
+                                                        <div class="d-flex">
+                                                            <div class=" align-self-center d-m-traffic-sources  mr-1 data-marker"></div>
+                                                            <span class="t-s-name">Direct</span>
+                                                        </div>
+                                                    </td>
+                                                    <td> <div id="t-s-direct-chart"></div> </td>
+                                                    <td class="text-right"> 1560 </td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td>
+                                                        <div class="d-flex">
+                                                            <div class=" align-self-center d-m-traffic-sources  mr-1 data-marker"></div>
+                                                            <span class="t-s-name">Social</span>
+                                                        </div>
+                                                    </td>
+                                                    <td> <div id="t-s-social-chart"></div> </td>
+                                                    <td class="text-right"> 1390 </td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td>
+                                                        <div class="d-flex">
+                                                            <div class=" align-self-center d-m-traffic-sources  mr-1 data-marker"></div>
+                                                            <span class="t-s-name">Referral</span>
+                                                        </div>
+                                                    </td>
+                                                    <td> <div id="t-s-referral-chart"></div> </td>
+                                                    <td class="text-right"> 1990 </td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td>
+                                                        <div class="d-flex">
+                                                            <div class=" align-self-center d-m-traffic-sources  mr-1 data-marker"></div>
+                                                            <span class="t-s-name">Mail</span>
+                                                        </div>
+                                                    </td>
+                                                    <td> <div id="t-s-mail-chart"></div> </td>
+                                                    <td class="text-right"> 1500 </td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td>
+                                                        <div class="d-flex">
+                                                            <div class=" align-self-center d-m-traffic-sources  mr-1 data-marker"></div>
+                                                            <span class="t-s-name">Other</span>
+                                                        </div>
+                                                    </td>
+                                                    <td> <div id="t-s-other-chart"></div> </td>
+                                                    <td class="text-right"> 875 </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                                
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="row">
+                    
+                    <div class="col-xl-12 mb-xl-12 col-lg-12 col-md-12 col-sm-12">
+
+                        <div class="statbox widget box box-shadow layout-spacing br-4">
+                            <div class="widget-header">
+                                <div class="row">
+                                    <div class="col-xl-12 col-md-12 col-sm-12 col-12">
+                                        <h4>Traffic By Country</h4>
+                                    </div>                 
+                                </div>
+                            </div>
+
+                            <div class="widget-content widget-content-area traffic-country">                                
+                                <div class="row">
+                                    <div class="col-xl-8 col-lg-12 col-md-12 col-sm-12 col-12">
+                                        <a href="http://www.amcharts.com/javascript-maps/" title="Interactive JavaScript maps" target="_blank" style="position: absolute; text-decoration: none; color: rgb(0, 0, 0); font-family: Verdana; font-size: 11px; opacity: 0.7; display: block; left: 5px; bottom: 0;">JS map by amCharts</a>
+                                        <div id="mapdiv"></div>
+                                    </div>
+                                    <div class="col-xl-4 col-lg-12 col-md-12 col-sm-12 col-12">
+                                        <div class="table-responsive table-data traffic-country-scroll">                                    
+                                            <table class="table">
+                                                <tbody>
+                                                    <tr>
+                                                        <td>
+                                                            <div class="d-flex">
+                                                                <div class=" align-self-center d-m-traffic-country  mr-1 data-marker"></div>
+                                                                <span>USA</span>
+                                                            </div>
+                                                        </td>
+                                                        <td>
+                                                            <p class="mb-1">41.30%</p>
+                                                            <div class="progress">
+                                                                <div class="progress-bar bg-success" role="progressbar" style="width: 41.30%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                                            </div>
+                                                        </td>
+                                                        <td class="text-center">
+                                                            <p class="mb-0"><i class="flaticon-arrows-1"></i> 3.67%</p>
+                                                        </td>
+                                                    </tr>
+
+                                                    <tr>
+                                                        <td>
+                                                            <div class="d-flex">
+                                                                <div class=" align-self-center d-m-traffic-country  mr-1 data-marker"></div>
+                                                                <span>China</span>
+                                                            </div>
+                                                        </td>
+                                                        <td>
+                                                            <p class="mb-1">22.74%</p>
+                                                            <div class="progress">
+                                                                <div class="progress-bar bg-success" role="progressbar" style="width: 30.74%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                                            </div>
+                                                        </td>
+                                                        <td class="text-center">
+                                                            <p class="mb-0"><i class="flaticon-down-arrow"></i> 3.88%</p>
+                                                        </td>
+                                                    </tr>
+
+                                                    <tr>
+                                                        <td>
+                                                            <div class="d-flex">
+                                                                <div class=" align-self-center d-m-traffic-country  mr-1 data-marker"></div>
+                                                                <span>Japan</span>
+                                                            </div>
+                                                        </td>
+                                                        <td>
+                                                            <p class="mb-1">16.60%</p>
+                                                            <div class="progress">
+                                                                <div class="progress-bar bg-success" role="progressbar" style="width: 16.60%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                                            </div>
+                                                        </td>
+                                                        <td class="text-center">
+                                                            <p class="mb-0"><i class="flaticon-arrows-1"></i> 1.67%</p>
+                                                        </td>
+                                                    </tr>
+
+                                                    <tr>
+                                                        <td>
+                                                            <div class="d-flex">
+                                                                <div class=" align-self-center d-m-traffic-country  mr-1 data-marker"></div>
+                                                                <span>India</span>
+                                                            </div>
+                                                        </td>
+                                                        <td>
+                                                            <p class="mb-1">10.50%</p>
+                                                            <div class="progress">
+                                                                <div class="progress-bar bg-success" role="progressbar" style="width: 10.50%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                                            </div>
+                                                        </td>
+                                                        <td class="text-center">
+                                                            <p class="mb-0"><i class="flaticon-arrows-1"></i> 0.54%</p>
+                                                        </td>
+                                                    </tr>
+
+                                                    <tr>
+                                                        <td>
+                                                            <div class="d-flex">
+                                                                <div class=" align-self-center d-m-traffic-country  mr-1 data-marker"></div>
+                                                                <span>Russia</span>
+                                                            </div>
+                                                        </td>
+                                                        <td>
+                                                            <p class="mb-1">6.00%</p>
+                                                            <div class="progress">
+                                                                <div class="progress-bar bg-success" role="progressbar" style="width: 6.00%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                                            </div>
+                                                        </td>
+                                                        <td class="text-center">
+                                                            <p class="mb-0"><i class="flaticon-down-arrow"></i> 2.13%</p>
+                                                        </td>
+                                                    </tr>
+
+                                                    <tr>
+                                                        <td>
+                                                            <div class="d-flex">
+                                                                <div class=" align-self-center d-m-traffic-country  mr-1 data-marker"></div>
+                                                                <span>Other</span>
+                                                            </div>
+                                                        </td>
+                                                        <td>
+                                                            <p class="mb-1">2.86%</p>
+                                                            <div class="progress">
+                                                                <div class="progress-bar bg-success" role="progressbar" style="width: 2.86%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                                            </div>
+                                                        </td>
+                                                        <td class="text-center">
+                                                            <p class="mb-0"><i class="flaticon-down-arrow"></i> 2.13%</p>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="row">
+                    
+                    <div class="col-xl-8 col-lg-12 col-md-12 col-sm-12 layout-spacing">
+                        <div class="widget-content widget-content-area br-4 h-100">
+                            <div class="newsletter-performance">
+                                <div class="newsletter-performance-header">
+                                    <div class="row">
+                                        <div class="col-xl-12 col-md-12 col-sm-12 col-12">
+                                            <h6 class="mb-4">Newsletter Performance</h6>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="newsletter-performance-body">
+                                    <div class="row">
+
+                                        <div class="col-xl-6 col-sm-6 col-12 pr-0">
+                                            <div class="media">
+                                                <img alt="image-product" src="assets/img/100x100.jpg" class="img-fluid mr-2">
+                                                <div class="media-body">
+                                                    <p class="mt-2">5% off on all Samsung Phones</p>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-xl-6 col-sm-6 col-12 text-center">
+                                            <p class="email-count  mb-0 mt-2">Total email send <span class="badge badge-primary badge-pill ml-2">9,647</span> </p>
+                                        </div>
+
+                                    </div>
+
+                                    <div class="row mt-5">
+                                        <div class="col-xl-4 col-md-4 col-sm-4 col-12 text-sm-left text-center">
+                                            <h6 class="mb-0">Total Views</h6>
+                                            <p class="n-p-views-count mb-0 d-flex justify-content-sm-start justify-content-center">3.9k <i class="flaticon-profits-1 align-self-center ml-3"></i></p>
+                                            <p class="n-p-weekend-calc">+2% This week</p>
+                                        </div>
+
+                                        <div class="col-xl-6 col-md-6 col-sm-6 col-12 ml-sm-auto mx-auto">
+                                            <span id="n-p-t-v-charts"></span>
+                                        </div>
+                                    </div>
+
+                                    <div class="row mt-5 mb-4">
+                                        <div class="col-xl-4 col-md-4 col-sm-4 col-12 text-sm-left text-center">
+                                            <h6 class="mb-0">Total Conversions</h6>
+                                            <p class="n-p-conversions mb-0 d-flex justify-content-sm-start justify-content-center">148 <i class="flaticon-arrows-1 align-self-center ml-3"></i></p>
+                                            <p class="n-p-t-c-weekend-calc">+0.7% This week</p>
+                                        </div>
+
+                                        <div class="col-xl-6 col-md-6 col-sm-6 col-12 ml-sm-auto mx-auto">
+                                            <span id="n-p-t-c-charts"></span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-xl-4 col-lg-12 col-md-12 col-sm-12 layout-spacing">
+                        <div class="widget-content widget-content-area br-4 h-100">
+                            <div class="visitor-engagement">
+                                <div class="visitor-engagement-header">
+                                    <div class="row">
+                                        <div class="col-xl-12 col-md-12 col-sm-12 col-12">
+                                            <h6 class="mb-4">Visitor Engagement</h6>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="visitor-engagement-body">
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <a href="http://www.amcharts.com/javascript-charts/" title="JavaScript charts" target="_blank" style="text-decoration: none; color: rgb(0, 0, 0); font-family: Verdana; font-size: 11px; opacity: 0.7; display: block;">JS chart by amCharts</a>
+                                            <div id="visitor-engagement-chart"></div>
+                                        </div>
+                                        <div class="col-md-12">
+                                            <ul class="list-unstyled mx-auto mt-5">                                                
+                                                <li class="v-e-product-name pn-1">Electronic 
+                                                    <span class="v-e-product-stats">
+                                                        <i class=" ml-2 flaticon-up-arrow-3"></i>
+                                                    </span>
+                                                </li>
+                                                <li class="v-e-product-name pn-2">News & Media 
+                                                    <span class="v-e-product-stats">
+                                                        <i class=" ml-2 flaticon-up-arrow-3"></i>
+                                                    </span>
+                                                </li>
+                                                <li class="v-e-product-name pn-3">Software 
+                                                    <span class="v-e-product-stats">
+                                                        <i class=" ml-2 flaticon-arrow-down"></i>
+                                                    </span>
+                                                </li>
+                                                <li class="v-e-product-name pn-4">Home Appliances 
+                                                    <span class="v-e-product-stats ">
+                                                        <i class=" ml-2 flaticon-arrow-down"></i>
+                                                    </span>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="row layout-spacing">
+                    <div class="col-xl-6 col-lg-12 col-md-12 col-sm-12 col-12">
+                        <div class="row">                            
+                            <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12 mb-5">                                
+                                <div class="widget-content widget-content-area br-4 p-0">                                    
+                                    <div class="customer-satisfaction text-center">                                        
+                                        <h6 class="c-s-title mt-3 mb-3">Customer Satisfaction</h6>
+                                        <p class="c-s-stats mb-4">76.5%</p>
+                                        <div class="progress">
+                                            <div class="progress-bar bg-primary" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                                        </div>
+                                        <div class="c-s-stats-data mt-5 d-flex justify-content-around">                                            
+                                            <div class="mb-3">
+                                                <p class="mb-0">Previous</p>
+                                                <span class="">79.85%</span>
+                                            </div>
+                                            <div class="mb-3">
+                                                <p class="mb-0">New</p>
+                                                <span class="">+ 14.29%</span>
+                                            </div>
+                                            <div class="mb-3">
+                                                <p class="mb-0">Trend</p>
+                                                <i class="flaticon-profits-1 mt-1"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-12 mb-5">
+                                <div class="widget-content widget-content-area br-4">
+                                    <div class="invoices">
+                                        <h6>Invoices</h6>
+                                        <i class="flaticon-bill"></i>
+                                        <div class="row text-center mt-4">
+                                            <div class="col-md-12 mt-2 mb-4">
+                                                <div class="d-flex justify-content-center">
+                                                    <div class=" align-self-center d-m-i-due  mr-1 data-marker"></div>
+                                                    <span class="i-due">DUE</span>
+                                                </div>
+                                                <p class="i-due-value  mt-1">$18765</p>
+                                            </div>
+
+                                            <div class="col-md-12">
+                                                <div class="d-flex justify-content-center">
+                                                    <div class=" align-self-center d-m-i-overdue  mr-1 data-marker"></div>
+                                                    <span class="i-overdue">OVERDUE</span>
+                                                </div>
+                                                <p class="i-overdue-value  mt-1">$56784</p>
+                                            </div>                                            
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-xl-12 col-lg-12 mb-4 mt-2">
+                                <div class="widget-content widget-content-area br-4 p-0">
+                                    <div class="widget weather-widget">
+                                        <div class="">
+                                            <div class="d-flex justify-content-between">
+                                                <div class="w-location">London</div>
+                                                <div class="w-condition">Rain</div>
+                                            </div>
+                                            <div class="d-flex justify-content-between mt-3">
+                                                <div class="w-temperature">
+                                                    <span class="w-t-value">-2 </span><span class="w-t-unit">c</span>
+                                                </div>
+                                                <div class="w-icon-locator">
+                                                    <i class="flaticon-weather"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="d-flex weather-stats">
+                                            <div class="mr-3 wind-speed">
+                                                <i class="flaticon-wind-1"></i>
+                                                <span>25 KM/H</span>
+                                            </div>
+                                            <div class="stats">
+                                                <i class="flaticon-weather-4"></i>
+                                                <span>Humidity</span>
+                                                <span class="ml-3">65%</span>
+                                            </div>
+                                        </div>
+                                        <div class="text-center">
+                                            <div class="row">
+                                                <div class="col-md-2 col-sm-2 col-6 mb-sm-0 mb-4">
+                                                    <div class="">
+                                                        <i class="w-icon mb-2 flaticon-cloud"></i>
+                                                        <br/>
+                                                        <span class="w-temp">
+                                                            <span class="w-temp-value">13</span>
+                                                            <span class="w-temp-unit">c</span>
+                                                         </span>
+                                                    </div>
+                                                </div>
+                                               <div class="col-md-2 col-sm-2 col-6 mb-sm-0 mb-4">
+                                                    <div class="">
+                                                        <i class="w-icon mb-2 flaticon-summer"></i>
+                                                        <br/>
+                                                        <span class="w-temp">
+                                                            <span class="w-temp-value">15</span>
+                                                            <span class="w-temp-unit">c</span>
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-2 col-sm-2 col-6 mb-sm-0 mb-4">
+                                                    <div class="">
+                                                        <i class="w-icon mb-2 flaticon-sky-rain"></i>
+                                                        <br/>
+                                                        <span class="w-temp">
+                                                            <span class="w-temp-value">7</span>
+                                                            <span class="w-temp-unit">c</span>
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-2 col-sm-2 col-6 mb-sm-0 mb-4">
+                                                    <div class="">
+                                                        <i class="w-icon mb-2 flaticon-storm"></i>
+                                                        <br/>
+                                                        <span class="w-temp">
+                                                            <span class="w-temp-value">5</span>
+                                                            <span class="w-temp-unit">c</span>
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-2 col-sm-2 col-6 mb-sm-0 mb-4">
+                                                    <div class="">
+                                                        <i class="w-icon mb-2 flaticon-wind"></i>
+                                                        <br/>
+                                                        <span class="w-temp">
+                                                            <span class="w-temp-value">2</span>
+                                                            <span class="w-temp-unit">c</span>
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-2 col-sm-2 col-6 mb-sm-0 mb-4">
+                                                    <div class="">
+                                                        <i class="w-icon mb-2 flaticon-moon-1"></i>
+                                                        <br/>
+                                                        <span class="w-temp">
+                                                            <span class="w-temp-value">-1</span>
+                                                            <span class="w-temp-unit">c</span>
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-xl-6">
+                        
+                        <div class="widget-content widget-content-area br-4 p-0">                            
+                            <div class="recent-activity">
+                                <div class="recent-activity-header">
+                                    <h6 class="mb-0">Notifications</h6>
+                                </div>
+                                <div class="recent-activity-body">
+                                    <div class="table-responsive mt-3">
+                                        <table class="table">
+                                            <tbody>
+                                                <tr>
+                                                    <td>
+                                                        <div class="d-flex">
+                                                            <div class="f-head">
+                                                                <img src="assets/img/90x90.jpg" class="rounded-circle mr-4 mCS_img_loaded" alt="user">
+                                                            </div>
+                                                            <div class="f-body">
+                                                                <p class="a-f-comment mb-1">
+                                                                    <span class="usr-name">Lara Young</span> Invited to join official meeting.
+                                                                </p>
+                                                                <p class="meta-info mb-0">
+                                                                    <span class="a-f-meta-usr-name mr-2"><i class="flaticon-user-9"></i> Shaun Park</span>
+                                                                    <span class="a-f-meta-time"><i class="flaticon-stopwatch-1"></i> 2 mins</span>
+                                                                </p>
+                                                            </div>
+                                                        </div>
+                                                    </td>
+                                                    <td class="text-right">
+                                                        <button class="btn btn-outline-secondary btn-reply-action mb-3">Reply</button>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <div class="d-flex">
+                                                            <div class="f-head">
+                                                                <img src="assets/img/90x90.jpg" class="rounded-circle mr-4 mCS_img_loaded" alt="user">
+                                                            </div>
+                                                            <div class="f-body">
+                                                                <p class="a-f-comment mb-1">Assigned a new project</p>
+                                                                <p class="meta-info mb-0">
+                                                                    <span class="a-f-meta-usr-name mr-2"><i class="flaticon-user-9"></i> Kristen</span>
+                                                                    <span class="a-f-meta-time"><i class="flaticon-stopwatch-1"></i> 5 mins</span>
+                                                                </p>
+                                                            </div>
+                                                        </div>
+                                                    </td>
+                                                    <td class="text-right">
+                                                        <button class="btn btn-outline-secondary btn-reply-action mb-3">Reply</button>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <div class="d-flex">
+                                                            <div class="f-head">
+                                                                <img src="assets/img/90x90.jpg" class="rounded-circle mr-4 mCS_img_loaded" alt="user">
+                                                            </div>
+                                                            <div class="f-body">
+                                                                <p class="a-f-comment mb-1">Invited you to like page.</p>
+                                                                <p class="meta-info mb-0">
+                                                                    <span class="a-f-meta-usr-name mr-2"><i class="flaticon-user-9"></i> Thomas Granger</span>
+                                                                    <span class="a-f-meta-time"><i class="flaticon-stopwatch-1"></i> 35 mins</span>
+                                                                </p>
+                                                            </div>
+                                                        </div>
+                                                    </td>
+                                                    <td class="text-right">
+                                                        <button class="btn btn-outline-secondary btn-reply-action mb-3">Reply</button>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <div class="d-flex">
+                                                            <div class="f-head">
+                                                                <img src="assets/img/90x90.jpg" class="rounded-circle mr-4 mCS_img_loaded" alt="user">
+                                                            </div>
+                                                            <div class="f-body">
+                                                                <p class="a-f-comment mb-1">Completed project.</p>
+                                                                <p class="meta-info mb-0">
+                                                                    <span class="a-f-meta-usr-name mr-2"><i class="flaticon-user-9"></i> Angie Lamb</span>
+                                                                    <span class="a-f-meta-time"><i class="flaticon-stopwatch-1"></i> 30 mins</span>
+                                                                </p>
+                                                            </div>
+                                                        </div>
+                                                    </td>
+                                                    <td class="text-right">
+                                                        <button class="btn btn-outline-secondary btn-reply-action mb-3">Reply</button>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <div class="d-flex">
+                                                            <div class="f-head">
+                                                                <img src="assets/img/90x90.jpg" class="rounded-circle mr-4 mCS_img_loaded" alt="user">
+                                                            </div>
+                                                            <div class="f-body">
+                                                                <p class="a-f-comment mb-1">Commented on your post.</p>
+                                                                <p class="meta-info mb-0">
+                                                                    <span class="a-f-meta-usr-name mr-2"><i class="flaticon-user-9"></i> Xavier</span>
+                                                                    <span class="a-f-meta-time"><i class="flaticon-stopwatch-1"></i> 10 mins</span>
+                                                                </p>
+                                                            </div>
+                                                        </div>
+                                                    </td>
+                                                    <td class="text-right">
+                                                        <button class="btn btn-outline-secondary btn-reply-action mb-3">Reply</button>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <div class="d-flex">
+                                                            <div class="f-head">
+                                                                <img src="assets/img/90x90.jpg" class="rounded-circle mr-4 mCS_img_loaded" alt="user">
+                                                            </div>
+                                                            <div class="f-body">
+                                                                <p class="a-f-comment mb-1">Created a new group for Jesse's project.</p>
+                                                                <p class="meta-info mb-0">
+                                                                    <span class="a-f-meta-usr-name mr-2"><i class="flaticon-user-9"></i> Iris Hubbard</span>
+                                                                    <span class="a-f-meta-time"><i class="flaticon-stopwatch-1"></i> 15 mins</span>
+                                                                </p>
+                                                            </div>
+                                                        </div>
+                                                    </td>
+                                                    <td class="text-right">
+                                                        <button class="btn btn-outline-secondary btn-reply-action mb-3">Reply</button>
+                                                    </td>
+                                                </tr>  
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-12 text-center  pb-4">
+                                            <button class="btn btn-secondary btn-rounded mt-1">View More</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="row">
+                    <div class="col-xl-7 col-lg-12 col-md-12 col-sm-12 layout-spacing">
+                        <div class="widget-content widget-content-area br-4 p-0">
+                            <div class="recent-sales">
+                                <div class="recent-sales-header">                                    
+                                    <div class="row">
+                                        <div class="col-md-6 col-6">
+                                            <h6 class="mb-0">Recent Sales</h6>
+                                        </div>
+                                        <div class="col-md-6 col-6 text-right">
+                                            <i class="flaticon-circle-cross"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="recent-sales-body">
+                                    <div class="table-responsive">
+                                        <div class=" recent-sales-scroll">
+                                            <table class="table table-hover">
+                                                <thead>
+                                                    <tr>
+                                                        <th>Product</th>
+                                                        <th>Order Id</th>
+                                                        <th>Date</th>
+                                                        <th class="text-center">Performance</th>
+                                                        <th class="text-center">Unit/$</th>
+                                                        <th class="">Total</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td>Camera</td>
+                                                        <td>#0100</td>
+                                                        <td>23 Dec</td>
+                                                        <td class="align-center"><div id="m-a-s-chart-1"></div></td>
+                                                        <td class="text-center">
+                                                            <span>1</span>
+                                                            <br/>
+                                                            <span>$25.80</span>
+                                                        </td>
+                                                        <td>$51.60</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Iphone</td>
+                                                        <td>#0200</td>
+                                                        <td>22 Dec</td>
+                                                        <td class="align-center"><div id="m-a-s-chart-2"></div> </td>
+                                                        <td class="text-center">
+                                                            <span>2</span>
+                                                            <br/>
+                                                            <span>$90.50</span>
+                                                        </td>
+                                                        <td>$90.50</td>
+                                                    </tr>
+
+
+                                                    <tr>
+                                                        <td>Headphone</td>
+                                                        <td>#0300</td>
+                                                        <td>20 Dec</td>
+                                                        <td class="align-center"><div id="m-a-s-chart-3"></div> </td>
+                                                        <td class="text-center">
+                                                            <span>3</span>
+                                                            <br/>
+                                                            <span>$50.00</span>
+                                                        </td>
+                                                        <td>$150.00</td>
+                                                    </tr>
+
+
+                                                    <tr>
+                                                        <td>Speakers</td>
+                                                        <td>#0400</td>
+                                                        <td>18 Dec</td>
+                                                        <td class="align-center"><div id="m-a-s-chart-4"></div> </td>
+                                                        <td class="text-center">
+                                                            <span>4</span>
+                                                            <br/>
+                                                            <span>$43.60</span>
+                                                        </td>
+                                                        <td>$43.60</td>
+                                                    </tr>
+
+                                                    <tr>
+                                                        <td>Watch</td>
+                                                        <td>#0500</td>
+                                                        <td>15 Dec</td>
+                                                        <td class="align-center"><div id="m-a-s-chart-5"></div> </td>
+                                                        <td class="text-center">
+                                                            <span>5</span>
+                                                            <br/>
+                                                            <span>$49.60</span>
+                                                        </td>
+                                                        <td>$49.60</td>
+                                                    </tr>
+
+                                                    <tr>
+                                                        <td>Sunglasses</td>
+                                                        <td>#0600</td>
+                                                        <td>12 Dec</td>
+                                                        <td class="align-center"><div id="m-a-s-chart-6"></div> </td>
+                                                        <td class="text-center">
+                                                            <span>6</span>
+                                                            <br/>
+                                                            <span>$60.35</span>
+                                                        </td>
+                                                        <td>$120.75</td>
+                                                    </tr>
+
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                    <div class="r-s-bottom-section text-center">
+                                        <a href="javascript:void(0);">View all</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-xl-5 col-lg-12 col-md-12 col-sm-12 layout-spacing">
+                        <div class="widget-content widget-content-area h-100 br-4 p-0 pb-xl-0 pb-3">                        
+                            <div class="chat">
+                                <div class="chat-header">
+                                    <div class="row">
+                                        <div class="col-md-4">
+                                            <h6 class="mb-0">Chat</h6>
+                                        </div>
+                                        <div class="col-md-8">
+                                            <div class="chat-usr-img text-center d-flex  justify-content-end">
+                                                <div class="mr-3">
+                                                    <img alt="admin-profile" src="assets/img/90x90.jpg" class="ml-0 bs-tooltip">
+                                                </div>
+                                                <ul class="list-inline badge-collapsed-img  mb-0 text-right">
+                                                    <li class="list-inline-item chat-online-usr">
+                                                        <img alt="admin-profile" src="assets/img/90x90.jpg" class="ml-0 bs-tooltip">
+                                                    </li>
+                                                    <li class="list-inline-item chat-online-usr">
+                                                        <img alt="admin-profile" src="assets/img/90x90.jpg" class="bs-tooltip">
+                                                    </li>
+                                                    <li class="list-inline-item chat-online-usr">
+                                                        <img alt="admin-profile" src="assets/img/90x90.jpg" class="bs-tooltip">
+                                                    </li>
+                                                    <li class="list-inline-item badge-notify mr-0">
+                                                        <div class="notification">
+                                                            <span class="">+5</span>
+                                                        </div>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="chat-body">
+                                    <div class="chat-system">
+                                        <div class="chat_window">
+                                            <div class="chat-scroll">
+                                                <ul class="chat-messages pl-0"></ul>
+                                            </div>
+                                            <div class="chat-bottom-section clearfix">
+                                                <div class="input-group message_input_wrapper w-75 mx-auto">
+                                                    <input type="text" class="message_input form-control br-left-30" placeholder="Type Here : )" aria-label="Amount (to the nearest dollar)">
+                                                    <div class="input-group-append  mr-2">
+                                                        <span class="input-group-text br-0"><i class="flaticon-smile-fill"></i></span>
+                                                        <span class="input-group-text br-right-30 br-0"><i class="flaticon-send-fill"></i></span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="message_template d-none">
+                                            <div class="message">
+                                                <div class="avatar"></div>
+                                                <div class="text_wrapper">
+                                                    <div class="text"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>                      
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12 layout-spacing">
+                        <div class="widget-content-area br-4">
+                            <div class="timeline-widget">
+                                <div class="col-md-12">
+                                    <p class="heading-title timeline-title"><span>Timeline</span></p>
+                                    <section class="cd-horizontal-timeline">
+                                        <div class="timeline timeline1">
+                                            <div class="events-wrapper">
+                                                <div class="events">
+                                                    <ol>
+                                                        <li><a href="#0" data-date="16/01/2018" class="selected">16 Jan</a></li>
+                                                        <li><a href="#0" data-date="28/02/2018">28 Feb</a></li>
+                                                        <li><a href="#0" data-date="20/04/2018">20 Mar</a></li>
+                                                        <li><a href="#0" data-date="20/05/2018">20 May</a></li>
+                                                        <li><a href="#0" data-date="09/07/2018">09 Jul</a></li>
+                                                        <li><a href="#0" data-date="30/08/2018">30 Aug</a></li>
+                                                        <li><a href="#0" data-date="15/09/2018" style="width: 140px;">15 Sep</a></li>
+                                                        <li><a href="#0" data-date="01/11/2018">01 Nov</a></li>
+                                                        <li><a href="#0" data-date="10/12/2018">10 Dec</a></li>
+                                                        <li><a href="#0" data-date="19/01/2019">29 Jan</a></li>
+                                                        <li><a href="#0" data-date="03/03/2019">3 Mar</a></li>
+                                                    </ol>
+                                                    <span class="filling-line" aria-hidden="true"></span>
+                                                </div>
+                                            </div> 
+                                            <ul class="cd-timeline-navigation">
+                                                <li><a href="#0" class="prev inactive">Prev</a></li>
+                                                <li><a href="#0" class="next">Next</a></li>
+                                            </ul> 
+                                        </div>
+                                        <div class="events-content">
+                                            <ol>
+                                                <li class="selected" data-date="16/01/2017">
+                                                    <div class="row">
+                                                        <div class="col-md-4 timeline-right-section">
+                                                            <p class="thumb-img"><img src="assets/img/350x350.jpg" class="img-thumbnail" alt="image-timeline"></p>
+                                                        </div>
+                                                        <div class="col-md-8">
+                                                            <h2 class="mt-3">Horizontal Timeline</h2>
+                                                            <em class="mb-5">16 January 2017</em>
+                                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum praesentium officia, fugit recusandae ipsa, quia velit nulla adipisci? Consequuntur aspernatur at, eaque hic repellendus sit dicta consequatur quae, ut harum ipsam molestias maxime non nisi reiciendis eligendi! Doloremque quia pariatur harum ea amet quibusdam quisquam, quae, temporibus dolores porro doloribus.</p>
+                                                            <h3><button class="btn btn-default">More...</button></h3>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li data-date="28/02/2018">
+                                                    <div class="row">
+                                                        <div class="col-md-4 timeline-right-section">
+                                                            <p class="thumb-img"><img src="assets/img/350x350.jpg" class="img-thumbnail" alt="image-timeline"></p>
+                                                        </div>
+                                                        <div class="col-md-8">
+                                                            <h2 class="mt-3">Event title here</h2>
+                                                            <em class="mb-5">28 February 2018</em>
+                                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum praesentium officia, fugit recusandae ipsa, quia velit nulla adipisci? Consequuntur aspernatur at, eaque hic repellendus sit dicta consequatur quae, ut harum ipsam molestias maxime non nisi reiciendis eligendi! Doloremque quia pariatur harum ea amet quibusdam quisquam, quae, temporibus dolores porro doloribus.</p>
+                                                            <h3><button class="btn btn-default">More...</button></h3>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li data-date="20/04/2018">
+                                                    <div class="row">
+                                                        <div class="col-md-4 timeline-right-section">
+                                                            <p class="thumb-img"><img src="assets/img/350x350.jpg" class="img-thumbnail" alt="image-timeline"></p>
+                                                        </div>
+                                                        <div class="col-md-8">
+                                                            <h2 class="mt-3">Event title here</h2>
+                                                            <em class="mb-5">20 March 2018</em>
+                                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum praesentium officia, fugit recusandae ipsa, quia velit nulla adipisci? Consequuntur aspernatur at, eaque hic repellendus sit dicta consequatur quae, ut harum ipsam molestias maxime non nisi reiciendis eligendi! Doloremque quia pariatur harum ea amet quibusdam quisquam, quae, temporibus dolores porro doloribus.</p>
+                                                            <h3><button class="btn btn-default">More...</button></h3>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li data-date="20/05/2018">
+                                                    <div class="row">
+                                                        <div class="col-md-4 timeline-right-section">
+                                                            <p class="thumb-img"><img src="assets/img/350x350.jpg" class="img-thumbnail" alt="image-timeline"></p>
+                                                        </div>
+                                                        <div class="col-md-8">
+                                                            <h2 class="mt-3">Event title here</h2>
+                                                            <em class="mb-5">20 March 2018</em>
+                                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum praesentium officia, fugit recusandae ipsa, quia velit nulla adipisci? Consequuntur aspernatur at, eaque hic repellendus sit dicta consequatur quae, ut harum ipsam molestias maxime non nisi reiciendis eligendi! Doloremque quia pariatur harum ea amet quibusdam quisquam, quae, temporibus dolores porro doloribus.</p>
+                                                            <h3><button class="btn btn-default">More...</button></h3>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li data-date="09/07/2018">
+                                                    <div class="row">
+                                                        <div class="col-md-4 timeline-right-section">
+                                                            <p class="thumb-img"><img src="assets/img/350x350.jpg" class="img-thumbnail" alt="image-timeline"></p>
+                                                        </div>
+                                                        <div class="col-md-8">
+                                                            <h2 class="mt-3">Event title here</h2>
+                                                            <em class="mb-5">20 March 2018</em>
+                                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum praesentium officia, fugit recusandae ipsa, quia velit nulla adipisci? Consequuntur aspernatur at, eaque hic repellendus sit dicta consequatur quae, ut harum ipsam molestias maxime non nisi reiciendis eligendi! Doloremque quia pariatur harum ea amet quibusdam quisquam, quae, temporibus dolores porro doloribus.</p>
+                                                            <h3><button class="btn btn-default">More...</button></h3>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li data-date="30/08/2018">
+                                                    <div class="row">
+                                                        <div class="col-md-4 timeline-right-section">
+                                                            <p class="thumb-img"><img src="assets/img/350x350.jpg" class="img-thumbnail" alt="image-timeline"></p>
+                                                        </div>
+                                                        <div class="col-md-8">
+                                                            <h2 class="mt-3">Event title here</h2>
+                                                            <em class="mb-5">20 March 2018</em>
+                                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum praesentium officia, fugit recusandae ipsa, quia velit nulla adipisci? Consequuntur aspernatur at, eaque hic repellendus sit dicta consequatur quae, ut harum ipsam molestias maxime non nisi reiciendis eligendi! Doloremque quia pariatur harum ea amet quibusdam quisquam, quae, temporibus dolores porro doloribus.</p>
+                                                            <h3><button class="btn btn-default">More...</button></h3>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li data-date="15/09/2018">
+                                                    <div class="row">
+                                                        <div class="col-md-4 timeline-right-section">
+                                                            <p class="thumb-img"><img src="assets/img/350x350.jpg" class="img-thumbnail" alt="image-timeline"></p>
+                                                        </div>
+                                                        <div class="col-md-8">
+                                                            <h2 class="mt-3">Event title here</h2>
+                                                            <em class="mb-5">20 March 2018</em>
+                                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum praesentium officia, fugit recusandae ipsa, quia velit nulla adipisci? Consequuntur aspernatur at, eaque hic repellendus sit dicta consequatur quae, ut harum ipsam molestias maxime non nisi reiciendis eligendi! Doloremque quia pariatur harum ea amet quibusdam quisquam, quae, temporibus dolores porro doloribus.</p>
+                                                            <h3><button class="btn btn-default">More...</button></h3>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li data-date="01/11/2018">
+                                                    <div class="row">
+                                                        <div class="col-md-4 timeline-right-section">
+                                                             <p class="thumb-img"><img src="assets/img/350x350.jpg" class="img-thumbnail" alt="image-timeline"></p>
+                                                         </div>
+                                                         <div class="col-md-8">
+                                                             <h2 class="mt-3">Event title here</h2>
+                                                             <em class="mb-5">20 March 2018</em>
+                                                             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum praesentium officia, fugit recusandae ipsa, quia velit nulla adipisci? Consequuntur aspernatur at, eaque hic repellendus sit dicta consequatur quae, ut harum ipsam molestias maxime non nisi reiciendis eligendi! Doloremque quia pariatur harum ea amet quibusdam quisquam, quae, temporibus dolores porro doloribus.</p>
+                                                             <h3><button class="btn btn-default">More...</button></h3>
+                                                         </div>
+                                                    </div>
+                                                </li>
+                                                <li data-date="10/12/2018">
+                                                    <div class="row">
+                                                        <div class="col-md-4 timeline-right-section">
+                                                            <p class="thumb-img"><img src="assets/img/350x350.jpg" class="img-thumbnail" alt="image-timeline"></p>
+                                                        </div>
+                                                        <div class="col-md-8">
+                                                            <h2 class="mt-3">Event title here</h2>
+                                                            <em class="mb-5">20 March 2018</em>
+                                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum praesentium officia, fugit recusandae ipsa, quia velit nulla adipisci? Consequuntur aspernatur at, eaque hic repellendus sit dicta consequatur quae, ut harum ipsam molestias maxime non nisi reiciendis eligendi! Doloremque quia pariatur harum ea amet quibusdam quisquam, quae, temporibus dolores porro doloribus.</p>
+                                                            <h3><button class="btn btn-default">More...</button></h3>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li data-date="19/01/2019">
+                                                    <div class="row">
+                                                        <div class="col-md-4 timeline-right-section">
+                                                            <p class="thumb-img"><img src="assets/img/350x350.jpg" class="img-thumbnail" alt="image-timeline"></p>
+                                                        </div>
+                                                        <div class="col-md-8">
+                                                            <h2 class="mt-3">Event title here</h2>
+                                                            <em class="mb-5">20 March 2019</em>
+                                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum praesentium officia, fugit recusandae ipsa, quia velit nulla adipisci? Consequuntur aspernatur at, eaque hic repellendus sit dicta consequatur quae, ut harum ipsam molestias maxime non nisi reiciendis eligendi! Doloremque quia pariatur harum ea amet quibusdam quisquam, quae, temporibus dolores porro doloribus.</p>
+                                                            <h3><button class="btn btn-default">More...</button></h3>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li data-date="03/03/2019">
+                                                    <div class="row">
+                                                        <div class="col-md-4 timeline-right-section">
+                                                            <p class="thumb-img"><img src="assets/img/350x350.jpg" class="img-thumbnail" alt="image-timeline"></p>
+                                                        </div>
+                                                        <div class="col-md-8">
+                                                            <h2 class="mt-3">Event title here</h2>
+                                                            <em class="mb-5">20 March 2019</em>
+                                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum praesentium officia, fugit recusandae ipsa, quia velit nulla adipisci? Consequuntur aspernatur at, eaque hic repellendus sit dicta consequatur quae, ut harum ipsam molestias maxime non nisi reiciendis eligendi! Doloremque quia pariatur harum ea amet quibusdam quisquam, quae, temporibus dolores porro doloribus.</p>
+                                                            <h3><button class="btn btn-default">More...</button></h3>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                            </ol>
+                                        </div>
+                                    </section>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-xl-4 col-lg-6 col-md-6 col-sm-12 col-12 layout-spacing  product-cat8">
+                        <div class="card br-4">
+                            <div class="wrapper">
+                                <div class="row">
+                                    <div class="col-sm-12">
+                                        <div class="product_inner text-center">
+                                            <div class="d-flex justify-content-between px-4 pt-3 pb-5 mb-2">
+                                                <span class="badge badge-pill badge-primary">Smart Watch</span>
+                                                <div>
+                                                    <i class="add-to-fav flaticon-like-1"></i>
+                                                </div>
+                                            </div>
+                                            <div class="card-title text-left mt-5">
+                                                <p><span class="product-name">Fossil</span> <br/> <span class="product-quality">Pearl White</span></p>
+                                            </div>
+                                            <div class="row">                                                
+                                                <div class="col-sm-12 mt-5">
+                                                    <img alt="image-product" src="assets/img/270x270.jpg" width="300" class="img-fluid">
+                                                </div>
+                                                <div class="col-sm-12">
+                                                    <p class="product-price">$ 75.99</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-xl-4 col-lg-6  col-md-6 col-sm-12 col-12 layout-spacing">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="widget-content-area br-4 mb-4">
+                                    <div class="d-flex justify-content-between t-likes">                                        
+                                        <div class="">
+                                            <p class="mb-0">Total Likes</p>
+                                            <h5 class="mb-0">20989</h5>
+                                        </div>
+                                        <div class="">
+                                            <i class="flaticon-like-3"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-12">
+                                <div class="widget-content-area br-4 mb-4">
+                                    <div class="d-flex justify-content-between t-shares">                                        
+                                        <div class="">
+                                            <p class="mb-0">Total Shares</p>
+                                            <h5 class="mb-0">9325</h5>
+                                        </div>
+                                        <div class="">
+                                            <i class="flaticon-share-1"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-12">
+                                <div class="widget-content-area br-4 mb-4">
+                                    <div class="d-flex justify-content-between t-comments">
+                                        <div class="">
+                                            <p class="mb-0">Total Comments</p>
+                                            <h5 class="mb-0">5789</h5>
+                                        </div>
+                                        <div class="">
+                                            <i class="flaticon-chat-2"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-xl-4 col-lg-6  col-md-6 col-sm-12 col-12 layout-spacing">
+                        <div class="widget-content-area br-4 mb-4 layout-spacing p-0">
+                            <div id="user-profile-card-2" class="card br-4">
+                                <div class="card-top-section br-4">
+                                    <div class="usr-profile-meta text-center">
+                                        <img alt="admin-profile" src="assets/img/120x120.jpg" class="img-fluid usr-profile rounded-circle">
+                                    </div>
+                                </div>
+                                <div class="card-body mt-4">
+                                    <div class="row mt-4">
+                                        <div class="col-md-12 text-center">
+                                            <div class="d-flex justify-content-around">
+                                                <span class="badge badge-pill badge-dark mt-2">Ecommerce</span>
+                                                <div class="usr-info-meta">
+                                                    <p class="usr-name mb-0 mt-2">Sonia Shaw</p>
+                                                </div>
+                                            </div>
+
+                                            <h4 class="mt-5">Ideas For Online Store</h4>
+                                            <p class="mt-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                                        </div>
+                                    </div>
+
+                                    <div class="card-bottom-section">
+                                        <div class="row">
+                                            <div class="col-md-12 text-center">
+                                                <button class="btn btn-gradient-danger btn-rounded">Read More</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </div>

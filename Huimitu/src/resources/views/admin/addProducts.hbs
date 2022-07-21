@@ -1,0 +1,237 @@
+<div id="content" class="main-content">
+    <div class="container">
+        <div class="page-header">
+            <div class="page-title">
+                <h3>Add/Edit Products</h3>
+                <div class="crumbs">
+                    <ul id="breadcrumbs" class="breadcrumb">
+                        <li><a href="index.html"><i class="flaticon-home-fill"></i></a></li>
+                        <li><a href="#">eCommerce</a></li>
+                        <li class="active"><a href="#">Add/Edit Products</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        {{! <div class="row">
+            <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12 layout-spacing">
+                <div class="statbox widget box box-shadow">
+                    <div class="widget-header">
+                        <div class="row">
+                            <div class="col-xl-12 col-md-12 col-sm-12 col-12">
+                                <h4>Add / Manage Product </h4>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="widget-content widget-content-area add-manage-product-1">
+                        <div class="row">
+                            <div class="col-xl-4 col-lg-4 col-md-12 text-center">
+                                <div class="product-img">
+                                    <img src="assets/img/320x320.jpg" alt="img">
+                                </div>
+                                <div class="d-flex thumbs-img mt-4 justify-content-center">
+                                    <div class="mr-2">
+                                        <img src="assets/img/320x320.jpg" alt="img">
+                                    </div>
+                                    <div class="mr-2">
+                                        <img src="assets/img/320x320.jpg" alt="img">
+                                    </div>
+                                    <div class="mr-2">
+                                        <img src="assets/img/320x320.jpg" alt="img">
+                                    </div>
+                                    <div class="file-input position-relative">
+                                        <i class="flaticon-circle-plus"></i>
+                                        <input type="file">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xl-8 col-lg-8 col-md-12">
+                                <form class="form-horizontal" action="#">
+                                    <div class="form-group">
+                                        <div class="row">
+                                            <label class="col-md-5">Attribute Set :</label>
+                                            <div class="col-md-7">
+                                                <select class="form-control form-custom" name="attribute_set">
+                                                    <option value="opt1">Default</option>
+                                                    <option value="opt2">Furniture</option>
+                                                    <option value="opt3">Shoes</option>
+                                                    <option value="opt4">Cell Phones</option>
+                                                    <option value="opt5">Monitors</option>
+                                                    <option value="opt6">Clothing</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </div><br>
+                                    <div class="form-group">
+                                        <div class="row">
+                                            <label class="col-md-5">Product Type :</label>
+                                            <div class="col-md-7">
+                                                <select class="form-control form-custom" name="product">
+                                                    <option value="opt1">Simple Product</option>
+                                                    <option value="opt2">Configurable Product</option>
+                                                    <option value="opt3">Bundle Product</option>
+                                                    <option value="opt4">Grouped Product</option>
+                                                    <option value="opt5">Virtual Product</option>
+                                                    <option value="opt6">Downloadable Product</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </div><br>
+                                    <div class="align-center">
+                                        <input value="Continue" class="btn" type="submit">
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div> }}
+
+        <div class="row">
+            <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12 layout-spacing">
+                <div class="statbox widget box box-shadow">
+                    <div class="widget-header">
+                        <div class="row">
+                            <div class="col-xl-12 col-md-12 col-sm-12 col-12">
+                                <h4>Add Product </h4>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="widget-content widget-content-area add-manage-product-2">
+                        <div class="row">
+                            <div class="col-xl-7 col-md-12">
+                                <div class="mx-auto card card-default">
+                                    <div class="card-heading">
+                                        <h2 class="card-title"><span>Products Information</span></h2>
+                                    </div>
+                                    <div class="card-body">
+                                        <div class="card-body">
+                                            <form class="form-horizontal" action="/admin/addProducts" method="post" enctype="multipart/form-data">
+                                                <div class="form-group mb-4">
+                                                    <div class="row">
+                                                        <label class="col-md-4">Name :</label>
+                                                        <div class="col-md-8">
+                                                            <input class="form-control" name="name" type="text" />
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="form-group mb-4">
+                                                    <div class="row">
+                                                        <label class="col-md-4">Description :</label>
+                                                        <div class="col-md-8">
+                                                            <textarea rows="4" cols="5" name="description"
+                                                                class="form-control"></textarea>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="form-group mb-4">
+                                                    <div class="row">
+                                                        <label class="col-md-4">Category :</label>
+                                                        <div class="col-md-8">
+                                                            <input class="form-control" name="category" type="text" />
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="form-group mb-4">
+                                                    <div class="row">
+                                                        <label class="col-md-4">Status :</label>
+                                                        <div class="col-md-8">
+                                                            <input class="form-control" name="status" type="text" />
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="form-group cutom-autocomplete mb-4">
+                                                    <div class="row">
+                                                        <label class="col-md-4">Country of Manufacture :</label>
+                                                        <div class="col-md-8">
+                                                            <input id="country" class="ui-corner-all form-control"
+                                                                placeholder="Type a Country..." name="country"/>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="form-group mb-4">
+                                                    <div class="row">
+                                                        <label class="col-md-4">Price :</label>
+                                                        <div class="col-md-8">
+                                                            <input class="form-control" name="price" type="text" />
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                
+                                                <div class="form-group mb-4">
+                                                    <div class="row">
+                                                        <label class="col-md-4">Discount :</label>
+                                                        <div class="col-md-8">
+                                                            <input class="form-control" name="discount" type="text" />
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="form-group">
+                                                    <div class="row">
+                                                        <label class="col-md-12"><span>Image</span></label>
+                                                    </div>
+                                                </div>
+                                                <div class="form-group">
+                                                    <div class="row">
+                                                        <label class="col-md-4">Image :</label>
+                                                        <div class="col-md-8">
+                                                            <div class="mb-3">
+                                                                <div class="custom-file">
+                                                                    <input type="file"  class="form-control-file" name="fileImage" >
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="form-group">
+                                                    <div class="row">
+                                                        <label class="col-md-4">QTY :</label>
+                                                        <div class="col-md-8">
+                                                            <input class="form-control" name="qty" type="text" />
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="form-group">
+                                                    <div class="row">
+                                                        <label class="col-md-12"><span>KEYWORDS</span></label>
+                                                    </div>
+                                                </div>
+                                                <div class="form-group">
+                                                    <div class="row">
+                                                        <label class="col-md-4">Keywords :</label>
+                                                        <div class="col-md-8">
+                                                            <input class="form-control" name="keywords" type="text" />
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="align-center">
+                                                    <input value="Insert Product" class="btn" type="submit" />
+                                                </div>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            {{! <div class="col-xl-5 col-md-12">
+                                <div class="card card-default">
+                                    <div class="card-heading">
+                                        <h2 class="card-title"><span>PRICING</span></h2>
+                                    </div>
+                                    <div class="card-body">
+                                        <form class="form-horizontal">
+
+                                        </form>
+                                    </div>
+                                </div>
+
+                            </div> }}
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

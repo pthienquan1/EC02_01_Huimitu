@@ -1,0 +1,118 @@
+
+  <div id="content" class="main-content">
+    <div class="container">
+        <div class="page-header">
+            <div class="page-title">
+                <h3>Users</h3>
+            </div>
+        </div>
+        <form class="" method="get">
+                        <div class="mt-0" name="sort" id="sort">
+                            <input class="mt-0" type="radio" name="sort" value="username"  selected="selected">Sort by name</input>
+                            <input class="mt-0" type="radio" name="sort" value="email">Sort by email</input>
+                            <input class="mt-0" type="radio" name="sort" value="createdAt">Sort by registertime</input>
+                            <button type="submit" class="btn btn-primary btn-sm" id="btnsort" >Sort</button>
+                        </div>
+        </form>
+        <div class="row margin-bottom-120">
+            <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+                <div class="statbox widget box box-shadow">
+                    <div class="widget-header">
+                        <div class="row">
+                            <div class="col-xl-12 col-md-12 col-sm-12 col-12">
+                                <h4>Product List </h4>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="widget-content widget-content-area">
+                        <div class="table-responsive mb-4">
+                            <table id="ecommerce-product-list" class="table  table-bordered">
+                                <thead>
+                                    <tr>
+                                        {{!-- <th>ID</th> --}}
+                                        {{!-- <th>Image</th> --}}
+                                        <th>Name</th> 
+                                        <th>City</th>
+                                        <th>Country</th>
+                                        <th>Telephone</th>
+                                        <th class="align-center">createAt</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    {{#each users}}
+                                    <tr>
+                                        {{!-- <td>{{this._id}}</td> --}}
+                                        {{!-- <td class="text-center">
+                                        <a class="product-list-img" href="javascript: void(0);"><img src="assets/img/60x60.jpg" alt="product"></a></td> --}}
+                                        <td><a href="/products/details/{{this.slug}}">{{this.username}}</a></td>
+                                        <td>{{this.city}}</td>
+                                        <td>{{this.country}}</td>
+                                        <td>{{this.telephone}}</td>
+                                        {{!-- <td class="text-center">{{this.createdAt}}</td> --}}
+                                        <td class="align-center">
+                                            <ul class="table-controls">
+                                                <li>
+                                                    <a href="" data-toggle="modal" data-target="#deleteProduct" data-placement="top" title="Ban" data-id="{{this._id}}">
+                                                        <i class="flaticon-delete-5"></i>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </td>
+                                    </tr> 
+                                    {{else}}
+                                    <tr>
+                                        <td colspan="5" class="text-center">
+                                            No users to show
+                                            <a href="/addUser">Add an User</a>
+                                        </td>
+                                    </tr>
+                                    {{/each}}
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<form name="delete-product-form" method="POST"></form>
+
+<div class="modal fade" id="deleteProduct" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Confirm notification</h5>
+        <button type="button" class="btn-close" data-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        Do you want to delete this?
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-danger" id="btn-delete-product">Delete</button>
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        var id;
+        var btnDeleteProduct = document.getElementById('btn-delete-product');
+        var deleteForm = document.forms['delete-product-form'];
+
+
+        $('#deleteProduct').on('show.bs.modal', function (event) {
+            var button = $(event.relatedTarget);
+            id = button.data('id'); 
+        });
+
+        btnDeleteProduct.onclick = function () {
+            deleteForm.action ='/user/' + id + '?_method=DELETE';
+            deleteForm.submit();
+        }
+    });
+    
+</script>
