@@ -13,7 +13,7 @@
                 <h1>Products Listing</h1>
             </div>
         </div>
-        <img src="img/bg_cat_shoes.jpg" class="img-fluid" alt="">
+        <img src="img/BUY-3-@-299-1350-x-550-px-1350-x-450-px.jpg" class="img-fluid" alt="">
     </div>
     <!-- /top_banner -->
     <div id="stick_here"></div>
@@ -49,14 +49,32 @@
                         <div class="collapse show" id="filter_1">
                             <ul>
                                 <li>
-                                    <label class="container_check">Xe <small></small>
-                                        <input type="checkbox" name="filtering" value="xe">
+                                    <label class="container_check">Cáp sạc<small></small>
+                                        <input type="checkbox" name="filtering" value="Cáp sạc">
                                         <span class="checkmark"></span>
                                     </label>
                                 </li>
                                 <li>
-                                    <label class="container_check">Sách <small></small>
-                                        <input type="checkbox" name="filtering" value="Sách">
+                                    <label class="container_check">Dây sạc <small></small>
+                                        <input type="checkbox" name="filtering" value="Dây sạc">
+                                        <span class="checkmark"></span>
+                                    </label>
+                                </li>
+                                <li>
+                                    <label class="container_check">Pin dự phòng <small></small>
+                                        <input type="checkbox" name="filtering" value="Pin dự phòng">
+                                        <span class="checkmark"></span>
+                                    </label>
+                                </li>
+                                <li>
+                                    <label class="container_check">Tai nghe <small></small>
+                                        <input type="checkbox" name="filtering" value="Tai nghe">
+                                        <span class="checkmark"></span>
+                                    </label>
+                                </li>
+                                <li>
+                                    <label class="container_check">Loa <small></small>
+                                        <input type="checkbox" name="filtering" value="Loa">
                                         <span class="checkmark"></span>
                                     </label>
                                 </li>
@@ -92,25 +110,19 @@
                         <div class="collapse" id="filter_4">
                             <ul>
                                 <li>
-                                    <label class="container_check">$0 — $50<small></small>
+                                    <label class="container_check">100.000đ — 1.000.000đ<small></small>
                                         <input type="checkbox">
                                         <span class="checkmark"></span>
                                     </label>
                                 </li>
                                 <li>
-                                    <label class="container_check">$50 — $100<small></small>
+                                    <label class="container_check">1.000.000đ — 2.000.000đ<small></small>
                                         <input type="checkbox">
                                         <span class="checkmark"></span>
                                     </label>
                                 </li>
                                 <li>
-                                    <label class="container_check">$100 — $150<small></small>
-                                        <input type="checkbox">
-                                        <span class="checkmark"></span>
-                                    </label>
-                                </li>
-                                <li>
-                                    <label class="container_check">$150 — $200<small></small>
+                                    <label class="container_check">2.000.000đ-10.000.000đ<small></small>
                                         <input type="checkbox">
                                         <span class="checkmark"></span>
                                     </label>
@@ -130,7 +142,7 @@
                 <div class="row row_item" >
                     <div class="col-sm-4">
                         <figure>
-                            <span class="ribbon off">-30%</span>
+                            <span class="ribbon off">{{discount}}%</span>
                             <a href="/products/details/{{slug}}">
                                 <img class="img-fluid lazy" src="{{splitPath fileImage}}"
                                      alt="">
