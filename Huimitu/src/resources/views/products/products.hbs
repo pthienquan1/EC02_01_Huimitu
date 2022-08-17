@@ -23,8 +23,7 @@
                 <li>
                     <form class="" method="get">
                         <div class="mt-0" name="sort" id="sort">
-                            <input class="mt-0" type="radio" name="sort" value="createdAt"  selected="selected">Sort createAt</input>
-                            <input class="mt-0" type="radio" name="sort" value="price">Sort by price</input>
+                            <input class="mt-0" type="radio" name="sort" value="createdAt"  selected="selected">Sort by createAt</input>
                             <button type="submit" class="btn btn-primary btn-sm" id="btnsort" >Sort</button>
                         </div>
                     </form>
@@ -39,8 +38,8 @@
                 <form class="filter_col" method="get">
                     <div class="inner_bt"><a href="#" class="open_filters"><i class="ti-close"></i></a></div>
                     <div class="filter_type version_2">
-                        <h4><a href="#filter_3" data-toggle="collapse" class="opened">Name</a></h4>
-                        <div class="collapse show" id="filter_3">
+                        <h4><a href="#filter_3" data-toggle="collapse" class="opened">Search</a></h4>
+                        <div class="collapse show  custom-search-input" id="filter_3">
                             <input type="text" class="container_check flex" name="search" value="">                                       
                         </div>
                     </div>
@@ -95,7 +94,7 @@
                                 </li>
                                 <li>
                                     <label class="container_check">Thailand <small></small>
-                                        <input type="checkbox" name="filtering" value="Nhật bản">
+                                        <input type="checkbox" name="filtering" value="Thailand">
                                         <span class="checkmark"></span>
                                     </label>
                                 </li>
@@ -178,18 +177,18 @@
                     <ul class="pagination">
                         <li><a href="#0" class="prev" title="previous page">&#10094;</a></li>
                         <li>
-                            <a href="#0">1</a>
+                            <a href="products?page=1" type="submit" name="page">1</a>
                         </li>
                         <li>
-                            <a href="#0" >2</a>
+                            <a href="products?page=2" >2</a>
                         </li>
                         <li>
-                            <a href="#0">3</a>
+                            <a href="products?page=3">3</a>
                         </li>
                         <li>
-                            <a href="#0">4</a>
+                            <a href="products?page=4">4</a>
                         </li>
-                        <li><a href="#0" class="next" title="next page">&#10095;</a></li>
+                        <li><a href="products?page=5" class="next" title="next page">&#10095;</a></li>
                     </ul>
                 </form>
             </div>

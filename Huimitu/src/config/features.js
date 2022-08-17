@@ -13,7 +13,7 @@
     //this.query = Products.find().limit(limit).skip(skip)
   
     this.sorting = () => {
-      const sort = this.queryString.sort || '-createdAt';
+      const sort = this.queryString.sort || '-price';
       this.query = this.query.sort(sort)
       return this;
     }
@@ -41,11 +41,12 @@
         console.log(queryObj);
       const excludedFields = ['page', 'sort', 'limit', 'search']
       excludedFields.forEach(el => delete(queryObj[el]))
-  
+      
       let queryStr = JSON.stringify(queryObj);
       queryStr = queryStr.replace(/\b(gte|gt|lt|lte|regex)\b/g,  (match) => '$' + match);
-    
+      
       this.query = this.query.find(JSON.parse(queryStr));
+
       return this;
     }
   
