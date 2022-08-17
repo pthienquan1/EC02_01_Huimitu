@@ -197,7 +197,7 @@
 					<div class="box_general summary">
 						<ul>
 							{{# each products }} 
-								<li class="clearfix"><em>{{ this.qty }}x {{ this.item.name }}</em>&nbsp;&nbsp;&nbsp;<span>{{this.price}}đ</span></li>
+								<li class="clearfix "><em>{{ this.qty }}x {{ this.item.name }}</em>&nbsp;&nbsp;&nbsp;<span class="myDIV">{{cur this.price}}đ</span></li>
 							{{/each}}							
 							{{!-- <li class="clearfix"><em>2x Armor Air Zoom Alpha</em> <span>$115.00</span></li> --}}
 						</ul>
@@ -206,7 +206,7 @@
 							 <li class="clearfix"><em><strong>Shipping</strong></em> <span>$0</span></li> --}}							
 						</ul>
 						<hr>
-						<div class="total clearfix"><strong>TOTAL <span>{{total}}đ</span></strong></div>
+						<div class="total clearfix myDIV"><strong>TOTAL <span>{{cur total}}</span></strong></div>
 						<button type="submit" class="btn_1 full-width">Confirm and Pay</a>
 						{{!-- <div class="form-group">
 								<label class="container_check">Register to the Newsletter.
@@ -231,5 +231,5 @@
 {{#section 'script'}}
 	<script src="https://js.stripe.com/v3/"></script>
 	<script type="text/javascript" src="/js/checkout.js"></script>
-
+	
 {{/section}}

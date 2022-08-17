@@ -49,7 +49,7 @@
               <span class="item_cart">{{ this.item.name }}</span>
             </td>
             <td>
-              <strong>{{ this.item.price }}đ</strong>
+              <strong>{{cur this.item.price }}đ</strong>
             </td>
             <td>
               <div>
@@ -70,7 +70,7 @@
                 
             </td>
             <td>
-              <strong>{{ this.price }}đ</strong>
+              <strong>{{cur this.price }}</strong>
             </td>
             <td class="options">
               <a href="/products/remove/{{this.item._id}}"><i class="ti-trash"></i></a>
@@ -117,7 +117,7 @@
               </li> --}}
               <li>
                 <span>Total: </span>
-                <strong>{{ totalPrice }}đ</strong>
+                <strong>{{cur totalPrice }}</strong>
               </li>
             </ul>
             <a href="/products/checkout" class="btn_1 full-width cart">Proceed to

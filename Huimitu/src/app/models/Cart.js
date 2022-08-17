@@ -3,7 +3,7 @@ module.exports = function Cart(oldCart) {
     this.items = oldCart.items || {};
     this.totalQty = oldCart.totalQty || 0;
     this.totalPrice = oldCart.totalPrice || 0;
-
+    
     this.add = function(item, id) {
         var storedItem = this.items[id];        
         // no item yet, add new
@@ -14,6 +14,7 @@ module.exports = function Cart(oldCart) {
         storedItem.price = storedItem.item.price * storedItem.qty;
         this.totalQty++;
         this.totalPrice += parseInt(storedItem.item.price);
+
     };
 
     this.reduceByOne = function(id) {

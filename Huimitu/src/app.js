@@ -46,6 +46,14 @@ app.engine('hbs', engine({
             const fchange = fsub.replace(" \\ "," / ");
             //console.log(fsub);
             return fchange;
+        },
+        cur: function(price){
+            let dollarUS = Intl.NumberFormat("en-US", {
+                style: "currency",
+                currency: "VND",
+            });
+            const cur = dollarUS.format(price);
+            return cur;
         }
     },
     extname: '.hbs',

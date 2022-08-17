@@ -1,4 +1,4 @@
-var stripe = Stripe('pk_test_51KsIjtFdigjD3itZzOTRrMGOJ4xAC1p8JuCt5cFHzfU0Q5n1gYXPzBy0Os9riOn7W4KUmV7GIcPYqkVINt0CDKG400jUNclm4D');
+var stripe = Stripe('pk_test_51LFYa0Hwma8KeAihhqPDJk8BKKvixj8A1D1U9UpdcaoIfUwQolWRn2ihPRbXvlpRu6gchPV10TOAT6LHTh5QAKKP00jzZjzfNr');
 
 var $form = $('#checkout-form');
 
