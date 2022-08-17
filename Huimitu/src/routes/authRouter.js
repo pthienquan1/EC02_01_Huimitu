@@ -22,7 +22,7 @@ passport.use(
     {
       clientID: GOOGLE_CLIENT_ID,
       clientSecret: GOOGLE_CLIENT_SECRET,
-      callbackURL: "https://shoppe-fake.herokuapp.com/oauth2/redirect/google",
+      callbackURL: "http://localhost:5000/oauth2/redirect/google",
       passReqToCallback: true,
     },
     function (request, accessToken, refreshToken, profile, done) {
