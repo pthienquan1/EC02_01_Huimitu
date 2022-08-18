@@ -26,7 +26,7 @@
         this.query = this.query.find({
           $text: { $search: search }
         })
-        console.log(this.query);
+        //console.log(this.query);
       }else{
         this.query = this.query.find()
       }
@@ -38,14 +38,30 @@
   
     this.filtering = () => {
       const queryObj = { ...this.queryString }
-        console.log(queryObj);
-      const excludedFields = ['page', 'sort', 'limit', 'search']
-      excludedFields.forEach(el => delete(queryObj[el]))
+      console.log(queryObj);
+      //   //console.log(queryObj);
+      // const excludedFields = ['page', 'sort', 'limit', 'search']
+      // excludedFields.forEach(el => delete(queryObj[el]))
       
-      let queryStr = JSON.stringify(queryObj);
-      queryStr = queryStr.replace(/\b(gte|gt|lt|lte|regex)\b/g,  (match) => '$' + match);
-      
-      this.query = this.query.find(JSON.parse(queryStr));
+      // let queryStr = JSON.stringify(queryObj);
+      // queryStr = queryStr.replace(/\b(gte|gt|lt|lte|regex)\b/g,  (match) => '$' + match);
+      // console.log(queryStr)
+      const FilteringKeys = Object.keys(queryObj).filter(value=>value.startsWith("filtering_")).map(value => value.split('_')[1]);
+      let query = {};
+      FilteringKeys.forEach(key => {
+        const key1 = `filtering_${key}`;
+        let values;
+        if(Array.isArray(queryObj[key1]))
+        {
+          values = [...queryObj[key1]];
+        }
+        else{
+          values = queryObj[key1];
+        }
+        query[key] = values;
+      });
+      console.log(query);
+      this.query = this.query.find(query).exec();
 
       return this;
     }
