@@ -60,7 +60,7 @@
         }
         query[key] = values;
       });
-      console.log(query);
+      // console.log(query);
       this.query = this.query.find(query).exec();
 
       return this;
