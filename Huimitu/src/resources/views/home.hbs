@@ -207,6 +207,26 @@
         <!-- /grid_item -->
       </div>
       {{/each}}
+      <div class="container margin_60_35">
+        <form id="demo" class="pagination__wrapper " method="get">
+          <ul class="pagination">
+            <li><a href="#0" class="prev" title="previous page">&#10094;</a></li>
+            <li>
+              <a href="?page=1" type="submit" name="page">1</a>
+            </li>
+            <li>
+              <a href="?page=2">2</a>
+            </li>
+            <li>
+              <a href="?page=3">3</a>
+            </li>
+            <li>
+              <a href="?page=4">4</a>
+            </li>
+            <li><a href="?page=5" class="next" title="next page">&#10095;</a></li>
+          </ul>
+        </form>
+      </div>
       <!-- /col -->
       {{!-- <div class="col-6 col-md-4 col-xl-3">
         <div class="grid_item">
@@ -1071,5 +1091,6 @@
     </div>
     <!-- /row -->
   </div> --}}
+  
   <!-- /container -->
 </main>

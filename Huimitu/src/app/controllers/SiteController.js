@@ -12,7 +12,19 @@ const { APIfeatures } = require("../../config/features")
 class SiteController {
   //[GET]
   async index(req, res, next) {
-    const products = await Product.find();
+
+    const features = new APIfeatures(Product.find({}), req.query)
+    .paginating()
+    .sorting()
+    .searching()
+    .filtering();
+
+    const result = await Promise.allSettled([
+      features.query,
+      Product.countDocuments(),
+    ]);
+    //const products = await Product.find();
+    const products = result[0].status === "fulfilled" ? result[0].value : [];
     //console.log(req.user);
     // Product.find({})
     //         .then(products => {
@@ -27,16 +39,33 @@ class SiteController {
     //         })
     try {
       //const name = req.user;
-      const products = await Product.find();
+      //const products = await Product.find();
       const users = User.find({ username: req.user.username });
+      const features = new APIfeatures(Product.find({}), req.query)
+        .paginating()
+        .sorting()
+        .searching()
+        .filtering();
+
+      const result = await Promise.allSettled([
+          features.query,
+          Product.countDocuments(),
+        ]);
+
+      const products = result[0].status === "fulfilled" ? result[0].value : [];
+      const count = result[1].status === "fulfilled" ? result[1].value : 0;
       //console.log(req.user.username);
       return res.render("home", {
         products: multipleMongooseToObject(products),
         users,
+        count,
         layout: "main",
       });
     } catch (err) {
-      return res.render("home",{products: multipleMongooseToObject(products),layout: "main"});
+      return res.render("home",{
+        products: multipleMongooseToObject(products),
+        layout: "main",
+      });
     }
     // if(req.user == undefined){
     //     res.render("home");
