@@ -5218,15 +5218,16 @@ input.qty2:focus {
 /* Checkbox style */
 .container_check {
   display: block;
-  position: relative;
-  padding-left: 30px;
+  position: relative; 
   line-height: 1.7;
   margin-bottom: 8px;
+  margin-top:5px;  
   cursor: pointer;
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
+  width:100%; 
 }
 .container_check input {
   position: absolute;
@@ -6257,6 +6258,7 @@ a.social_bt.google:before {
   height: 50px;
   padding-top: 20px;
   margin-bottom: 25px;
+  margin-left:200px;
   position: relative;
   text-align: center;
   width: 100%;
@@ -6312,6 +6314,9 @@ a.social_bt.google:before {
   outline: none;
   position: relative;
   transition: all 170ms linear;
+}
+.pagination li a{
+  text-decoration: none;
 }
 .pagination a:before {
   background: rgba(0, 0, 0, 0.2);
