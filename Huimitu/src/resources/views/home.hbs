@@ -167,7 +167,7 @@
     </div>
     <div class="row small-gutters">
        {{#each products}}
-      <div class="col-6 col-md-4 col-xl-3">
+      <div class="col-6 col-md-4 col-xl-3 content" style="display: none;">
        
         <div class="grid_item">
           <figure>
@@ -210,20 +210,7 @@
       <div class="container margin_60_35">
         <form id="demo" class="pagination__wrapper" method="get">
           <ul class="pagination" style="margin-left:220px; ">
-            <li><a href="#0" class="prev" title="previous page">&#10094;</a></li>
-            <li>
-              <a href="?page=1" type="submit" name="page">1</a>
-            </li>
-            <li>
-              <a href="?page=2">2</a>
-            </li>
-            <li>
-              <a href="?page=3">3</a>
-            </li>
-            <li>
-              <a href="?page=4">4</a>
-            </li>
-            <li><a href="?page=5" class="next" title="next page">&#10095;</a></li>
+            <a href="#" id="loadMore">Load More</a>
           </ul>
         </form>
       </div>
@@ -1094,3 +1081,20 @@
   
   <!-- /container -->
 </main>
+
+{{#section 'script'}}
+    <script>
+      $(document).ready(function () {
+        $(".content").slice(0, 8).show();
+        $("#loadMore").on("click", function (e) {
+          e.preventDefault();
+          $(".content:hidden").slice(0, 4).slideDown();
+          if ($(".content:hidden").length == 0) {
+            $("#loadMore").text("No Content").addClass("noContent");
+          }
+        });
+
+      })
+    </script>
+    <script>$('.alert').alert()</script>
+{{/section}}

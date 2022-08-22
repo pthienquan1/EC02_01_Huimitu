@@ -14,7 +14,7 @@ class SiteController {
   async index(req, res, next) {
 
     const features = new APIfeatures(Product.find({}), req.query)
-    .paginating()
+    // .paginating()
     .sorting()
     .searching()
     .filtering();
@@ -42,7 +42,7 @@ class SiteController {
       //const products = await Product.find();
       const users = User.find({ username: req.user.username });
       const features = new APIfeatures(Product.find({}), req.query)
-        .paginating()
+        // .paginating()
         .sorting()
         .searching()
         .filtering();
