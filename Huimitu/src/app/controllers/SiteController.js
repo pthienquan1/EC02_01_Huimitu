@@ -11,6 +11,8 @@ const {
 const { APIfeatures } = require("../../config/features")
 class SiteController {
   //[GET]
+
+
   async index(req, res, next) {
 
     const features = new APIfeatures(Product.find({}), req.query)
@@ -75,6 +77,8 @@ class SiteController {
     //   name: req.user
     // });
   }
+
+  
 
   loginRe(req, res, next) {
     res.redirect("/login");
@@ -187,6 +191,11 @@ class SiteController {
       });
     }
   }
+
+  help(req, res, next) {
+    res.render("help");
+  }
+
 }
 
 module.exports = new SiteController();

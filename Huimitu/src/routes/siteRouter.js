@@ -4,6 +4,8 @@ const ensureAnthenticated = require("../config/auth");
 const SiteController = require("../app/controllers/SiteController");
 var passport = require("passport");
 
+router.get("/help", SiteController.help);
+
 router.get(
   "/login/federated/google",
   passport.authenticate("google", { scope: ["email", "profile"] })
@@ -30,5 +32,6 @@ router.get(
   SiteController.index
 );
 router.get("/api/check-email-exist/:email", SiteController.checkEmailExist);
+
 
 module.exports = router;
