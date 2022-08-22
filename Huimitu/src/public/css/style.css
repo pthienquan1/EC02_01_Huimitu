@@ -6273,7 +6273,6 @@ a.social_bt.google:before {
 .pagination__wrapper:after {
   bottom: -1px;
 }
-
 @keyframes hoverAnimation {
   from {
     opacity: 1;
@@ -6342,7 +6341,7 @@ a.social_bt.google:before {
 }
 .pagination a.active {
   background: rgba(0, 0, 0, 0.1);
-  color: black;
+  color: pink;
   cursor: default;
 }
 .pagination .prev,
