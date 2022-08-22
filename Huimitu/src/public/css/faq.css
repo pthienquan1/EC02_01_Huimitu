@@ -20,7 +20,8 @@ a.box_topic {
   -webkit-border-radius: 3px;
   -moz-border-radius: 3px;
   -ms-border-radius: 3px;
-  border-radius: 3px;
+  border-radius: 3px; 
+  text-decoration: none ;
 }
 @media (max-width: 767px) {
   a.box_topic {
@@ -131,6 +132,7 @@ a.box_topic_2 p {
 .list_articles ul li a {
   color: #444;
   display: block;
+  text-decoration: none;
 }
 .list_articles ul li a:hover {
   color: #004dda;
