@@ -1,0 +1,7 @@
+User
+user: khiemlethanh1234@gmail.com
+pass: 1234567
+
+Admin
+user: khiemlethanh123@gmail.com
+pass: 1234567
