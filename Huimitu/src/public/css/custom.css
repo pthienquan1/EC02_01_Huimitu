@@ -28,3 +28,7 @@
     background-color: transparent !important;
     pointer-events: none;
 }
+
+.revealed {
+    z-index: 0 !important;
+}
