@@ -196,6 +196,10 @@ class SiteController {
     res.render("help");
   }
 
+  about(req,res,next){
+    res.render("about");
+  }
+
 }
 
 module.exports = new SiteController();

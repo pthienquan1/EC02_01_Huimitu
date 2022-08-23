@@ -5,7 +5,7 @@ const SiteController = require("../app/controllers/SiteController");
 var passport = require("passport");
 
 router.get("/help", SiteController.help);
-
+router.get("/about", SiteController.about);
 router.get(
   "/login/federated/google",
   passport.authenticate("google", { scope: ["email", "profile"] })
