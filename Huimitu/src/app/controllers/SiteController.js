@@ -200,6 +200,10 @@ class SiteController {
     res.render("about");
   }
 
+  contact(req,res,next){
+    res.render("contact");
+  }
+
 }
 
 module.exports = new SiteController();
