@@ -140,7 +140,7 @@ class ProductsController {
     }
     var cart = new Cart(req.session.cart);
 
-    const stripe = require('stripe')('sk_test_51LFYa0Hwma8KeAihLOKnjMqSQmUbUJopFmOPfy1AspF3AX8RhlsXHbcdNnKyDn1is9qn4rahrXIV8QRRMrQluCEf008UAtIdti');
+    const stripe = require('stripe')('sk_test_51LFYa0Hwma8KeAih1w1UvfMpwaj3rFdcOwn5judbp5tlwVCSI0jvpQSIdtlsjPvCHk7RefbvJGYLZL5cQbud4M6q00GODDGZkg');
 
     stripe.charges.create({
       amount: cart.totalPrice,
